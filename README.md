@@ -1,54 +1,54 @@
-# Find-That-Footy-Player-
-P1 App
+# Find-That-Footy-Player-!
+Project 1 Application
 
 # Project Overview
+This purpose of "Find That Footy [Player]!" is to provide a database that can access various soccer (or "footy") players by name, national team, and/or position played. 
 
 ## Project Name
-
-The name of your project.
+Find That Footy [Player]!
 
 ## Project Description
-
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+This application with be a searchable database that returns player information based on user input.
 
 ## API and Data Sample
+The API used in this project is:
+https://www.football-data.org/
 
-Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
+```
+{
+  "id": 44,
+  "name": "Cristiano Ronaldo",
+  "firstName": "Cristiano Ronaldo",
+  "lastName": null,
+  "dateOfBirth": "1985-02-05",
+  "countryOfBirth": "Portugal",
+  "nationality": "Portugal",
+  "position": "Attacker",
+  "shirtNumber": null,
+  "lastUpdated": "2021-05-26T09:46:02Z"
+}
+```
 
 ## Wireframes
-
 Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
 
 ### MVP/PostMVP
-
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
-
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
-
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
-
+- Find and use external api to access basic player information.
+- Allow user to search for players via name, national team, and position played.
+- Add a button that generates information about a randomly chosen player.
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
-
-- Add second API
-- Use local storage to save user favorites
+- Add second api to access player photos or video highlights.
+- Add 'club team' as a search function item and include this information in the player bio (this may need another api).
 
 ## Project Schedule
-
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
-
 |  Day | Deliverable | Status
 |---|---| ---|
-|July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|July 13| Project Approval | Incomplete
-|July 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|July 14| Pseudocode / actual code | Incomplete
-|July 15| Initial Clickable Model  | Incomplete
+|Monday, August 30| Project Pitch and Approval from Squad | Incomplete
+|Tuesday, August 31| Core Application Structure (HTML, basic CSS, beginning of JS) | Incomplete
+|Wednesday, September 1| Core Application Structure (Javascript) | Incomplete
+|September 2| Pseudocode / actual code | Incomplete
+|September 3| Initial Clickable Model  | Incomplete
 |July 16| MVP | Incomplete
 |July 17| Presentations | Incomplete
 
