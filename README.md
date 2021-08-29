@@ -30,10 +30,12 @@ https://www.football-data.org/
 ```
 
 ## Wireframes
-Desktop View
+Desktop View:
+
 ![alt text](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1630266465/P1_DesktopWireframe_sf6ohi.png)
 
-Mobile View
+Mobile View:
+
 ![alt text](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1630266478/P1_Mobile_Wireframe_dsvntc.png)
 
 ### MVP/PostMVP
@@ -56,19 +58,28 @@ Mobile View
 
 ## Priority Matrix
 
-!!!!!!
+![alt text](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1630272137/P1_PriorityMatrix_libnfw.png)
 
 ## Timeframes
 
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
-
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
-
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Set Up Personal GitHub Repo | H | 1hrs| 1hrs | 1hrs |
+| Creating Pitch | H | 3 hrs| 4 hrs | 6 hrs |
+| Accessing a viable API | H | 3 hrs| 3 hrs | 4 hrs |
+| HTML Structure | H | 2 hrs | hrs | hrs |
+| Basic CSS Structure | H | 1 hrs | hrs | hrs |
+| CSS Flexbox Layout | H | 3 hrs | hrs | hrs |
+| CSS Styling (font, color, data output) | M | 3 hrs | hrs | hrs |
+| CSS Media Query (desktop, mobile) | H | 2 hrs | hrs | hrs |
+| JS Axios / Linking API | H | 2 hrs | hrs | hrs |
+| JS Search by Name | H | 3 hrs | hrs | hrs |
+| JS Search by Team | H | 3 hrs | hrs | hrs |
+| JS Search by Position | H | 3 hrs | hrs | hrs |
+| JS Random Player Generator | H | 3 hrs | hrs | hrs |
+| Deploy App to GitHub | H | 2 hrs | hrs | hrs |
+| Post MVP to Add Player Image | M | 8 hrs | hrs | hrs |
+| Total |  | hrs| hrs | hrs |
 
 ## Code Snippet
 
