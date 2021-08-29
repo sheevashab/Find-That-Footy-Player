@@ -40,7 +40,7 @@ Mobile View:
 
 ### MVP/PostMVP
 #### MVP 
-- Find and use external api to access basic player information (name, national team, position, position, and jersey number).
+- Find and use external api to access basic player information (name, national team, position, and jersey number).
 - Allow user to search for players via name, national team, and position played.
 - Add a button that generates information about a randomly chosen player.
 #### PostMVP  
@@ -64,7 +64,7 @@ Mobile View:
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Set Up Personal GitHub Repo | H | 1hrs| 1hrs | 1hrs |
+| Set Up Personal GitHub Repo | H | 1 hrs| 1 hrs | 1 hrs |
 | Creating Pitch | H | 3 hrs| 4 hrs | 6 hrs |
 | Accessing a viable API | H | 3 hrs| 3 hrs | 4 hrs |
 | HTML Structure | H | 2 hrs | hrs | hrs |
@@ -79,7 +79,7 @@ Mobile View:
 | JS Random Player Generator | H | 3 hrs | hrs | hrs |
 | Deploy App to GitHub | H | 2 hrs | hrs | hrs |
 | Post MVP to Add Player Image | M | 8 hrs | hrs | hrs |
-| Total |  | hrs| hrs | hrs |
+| Total |  | 42 hrs| hrs | hrs |
 
 ## Code Snippet
 
