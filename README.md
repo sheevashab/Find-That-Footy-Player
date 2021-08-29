@@ -30,11 +30,15 @@ https://www.football-data.org/
 ```
 
 ## Wireframes
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+Desktop View
+![alt text](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1630266465/P1_DesktopWireframe_sf6ohi.png)
+
+Mobile View
+![alt text](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1630266478/P1_Mobile_Wireframe_dsvntc.png)
 
 ### MVP/PostMVP
 #### MVP 
-- Find and use external api to access basic player information.
+- Find and use external api to access basic player information (name, national team, position, position, and jersey number).
 - Allow user to search for players via name, national team, and position played.
 - Add a button that generates information about a randomly chosen player.
 #### PostMVP  
@@ -44,13 +48,11 @@ Upload images of your wireframes to an image hosting site or add them to an asse
 ## Project Schedule
 |  Day | Deliverable | Status
 |---|---| ---|
-|Monday, August 30| Project Pitch and Approval from Squad | Incomplete
-|Tuesday, August 31| Core Application Structure (HTML, basic CSS, beginning of JS) | Incomplete
-|Wednesday, September 1| Core Application Structure (Javascript) | Incomplete
-|September 2| Pseudocode / actual code | Incomplete
-|September 3| Initial Clickable Model  | Incomplete
-|July 16| MVP | Incomplete
-|July 17| Presentations | Incomplete
+|Monday, August 30| Project Pitch and Approval from Squad, Core Application Structure (HTML, basic CSS, beginning of JS) | Incomplete
+|Tuesday, August 31| Full JavaScript Functionality (call api, functioning search boxes and buttons that invoke data output) | Incomplete
+|Wednesday, September 1| Styling in CSS (flexbox, text styling, color scheme) | Incomplete
+|Thursday, September 2| Wrap Up Any Loose Ends in Code (function and style), Prepare for Presentation, Post MVPs | Incomplete
+|Friday, September 3| Presentations  | Incomplete
 
 ## Priority Matrix
 
