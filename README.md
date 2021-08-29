@@ -54,7 +54,7 @@ Upload images of your wireframes to an image hosting site or add them to an asse
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
+!!!!!!
 
 ## Timeframes
 
