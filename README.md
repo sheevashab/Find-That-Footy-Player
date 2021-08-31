@@ -50,7 +50,7 @@ Mobile View:
 ## Project Schedule
 |  Day | Deliverable | Status
 |---|---| ---|
-|Monday, August 30| Project Pitch and Approval from Squad, Core Application Structure (HTML, basic CSS, beginning of JS) | Incomplete
+|Monday, August 30| Project Pitch and Approval from Squad, Core Application Structure (HTML, basic CSS, beginning of JS) | Complete
 |Tuesday, August 31| Full JavaScript Functionality (call api, functioning search boxes and buttons that invoke data output) | Incomplete
 |Wednesday, September 1| Styling in CSS (flexbox, text styling, color scheme) | Incomplete
 |Thursday, September 2| Wrap Up Any Loose Ends in Code (function and style), Prepare for Presentation, Post MVPs | Incomplete
@@ -67,10 +67,10 @@ Mobile View:
 | Set Up Personal GitHub Repo | H | 1 hrs| 1 hrs | 1 hrs |
 | Creating Pitch | H | 3 hrs| 4 hrs | 6 hrs |
 | Accessing a viable API | H | 3 hrs| 3 hrs | 4 hrs |
-| HTML Structure | H | 2 hrs | hrs | hrs |
-| Basic CSS Structure | H | 1 hrs | hrs | hrs |
-| CSS Flexbox Layout | H | 3 hrs | hrs | hrs |
-| CSS Styling (font, color, data output) | M | 3 hrs | hrs | hrs |
+| HTML Structure | H | 2 hrs | 2 hrs | hrs |
+| Basic CSS Structure | H | 1 hrs | 1 hrs | hrs |
+| CSS Flexbox Layout | H | 3 hrs | 2 hrs | hrs |
+| CSS Styling (font, color, data output) | M | 3 hrs | 2 hrs | hrs |
 | CSS Media Query (desktop, mobile) | H | 2 hrs | hrs | hrs |
 | JS Axios / Linking API | H | 2 hrs | hrs | hrs |
 | JS Search by Name | H | 3 hrs | hrs | hrs |
