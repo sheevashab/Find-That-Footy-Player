@@ -1,0 +1,46 @@
+body{
+  background-color: lightgrey;
+}
+
+h1 {
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  background-image: url("https://easyturf.com/wp-content/uploads/2016/04/iStock_000045030676_Medium.jpg");
+  text-align: center;
+  padding: 20px;
+  font-size: 60px;
+  color: white;
+}
+
+div {
+  font-family: 'ABeeZee', sans-serif;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+.random {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: green;
+  color: white;
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.soccerBall {
+  font-size: 50px;
+  color:lightpink;
+}
+
+.playerDiv {
+  
+}
