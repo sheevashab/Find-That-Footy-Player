@@ -1,5 +1,5 @@
 body{
-  background-color: lightgrey;
+  background-color: #FFB400
 }
 
 h1 {
@@ -7,40 +7,54 @@ h1 {
   background-image: url("https://easyturf.com/wp-content/uploads/2016/04/iStock_000045030676_Medium.jpg");
   text-align: center;
   padding: 20px;
-  font-size: 60px;
-  color: white;
+  font-size: 42px;
+  color: #FFF9E9;
 }
 
 div {
   font-family: 'ABeeZee', sans-serif;
+  color: #5A8100;
 }
 
-.search {
+#search {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  
+  align-items: flex-start;
+  align-content: space-between;
 }
 
 .random {
   display: flex;
   justify-content: center;
+  align-items: flex-end;
 }
 
-.footer {
+footer {
   display: flex;
   justify-content: center;
-  background-color: green;
-  color: white;
+  background-color: #5A8100;
+  color: #FFF9E9;
   font-size: 12px;
   font-weight: lighter;
 }
 
 .soccerBall {
-  font-size: 50px;
-  color:lightpink;
+
 }
 
 .playerDiv {
   
+}
+
+@media screen and (min-width: 480px) {
+
+  body {
+    background-color: #FFF9E9;
+  }
+
+  h1{
+    color: #FFB400;
+    font-size: 72px;
+  }
 }
