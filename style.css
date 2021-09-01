@@ -1,14 +1,37 @@
+/* html {
+height: 100%;
+width: 100%;
+} */
+
 body{
-  background-color: #FFB400
+  background-color: #FFB400;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
 }
 
 h1 {
+  display: flex;
+  justify-content: center;
   font-family: 'IBM Plex Sans Arabic', sans-serif;
   background-image: url("https://easyturf.com/wp-content/uploads/2016/04/iStock_000045030676_Medium.jpg");
   text-align: center;
   padding: 20px;
+  margin: 0px;
   font-size: 42px;
   color: #FFF9E9;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  font-size: 14 px;
+}
+
+.aboutapp {
+  text-align: center;
+  font-size: 18px;
 }
 
 div {
@@ -22,6 +45,7 @@ div {
   justify-content: center;
   align-items: flex-start;
   align-content: space-between;
+  margin: 40px;
 }
 
 .random {
@@ -30,6 +54,27 @@ div {
   align-items: flex-end;
 }
 
+.soccerBall {
+
+}
+
+.output {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.playerCard {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items:center;
+  margin: 20px;
+  padding: 10px;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 5px;
+}
 footer {
   display: flex;
   justify-content: center;
@@ -37,14 +82,7 @@ footer {
   color: #FFF9E9;
   font-size: 12px;
   font-weight: lighter;
-}
-
-.soccerBall {
-
-}
-
-.playerDiv {
-  
+  text-align: center;
 }
 
 @media screen and (min-width: 480px) {
@@ -57,4 +95,8 @@ footer {
     color: #FFB400;
     font-size: 72px;
   }
+}
+
+p {
+  font-size: 24 px;
 }

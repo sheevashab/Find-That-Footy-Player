@@ -4,7 +4,7 @@ let url = "";
 const apiKey = "f7e634914de6fd221adb37b5a65380f3caa91588eb38b6edcb7db66c42344a1d";
 let nameUrl = `https://apiv3.apifootball.com/?action=get_players&player_name=${search}&APIkey=${apiKey}`;
 let teamUrl = `https://apiv3.apifootball.com/?action=get_teams&league_id=${search}&APIkey=${apiKey}`;
-// let randomUrl =
+// let randomUrl = `https://apiv3.apifootball.com/?action=get_players&player_name=Sergio Camus&APIkey=${apiKey}`;
 
 //input variables to retrieve user input that will eventually return the values of player info
 const inputName = document.querySelector("#name");
@@ -19,6 +19,7 @@ searchName.addEventListener("click", (e) => {
   // console.log(url);
   url = nameUrl;
   findPlayer();
+  inputName.value = ""
 });
 
 //attach event listener for search by team
@@ -30,18 +31,20 @@ searchTeam.addEventListener("click", (e) => {
   console.log(url);
   url = teamUrl;
   findTeam();
+  inputTeam.value = ""
 });
 
 //attach event listener for Random Player Generator button (should pull from players url)
 let randomSearch = document.querySelector("#random");
 randomSearch.addEventListener("click", (e) => {
   e.preventDefault();
-  // let i = Math.floor(Math.random(create array of players names via axios request))
+  // let i = Math.floor(Math.random() * myarray.length)create array of players names via axios request))
 })
 
 //send axios get request to api's player URL for search by name
 async function findPlayer() {
   let nameUrl = `https://apiv3.apifootball.com/?action=get_players&player_name=${search}&APIkey=${apiKey}`;
+  outputDiv.innerHTML = (null);
   try {
     let response = await axios.get(nameUrl);
     let playerInformation = response.data
@@ -56,6 +59,7 @@ async function findPlayer() {
 //send axios get request to api's teams URL for search by team
 async function findTeam() {
   let teamUrl = `https://apiv3.apifootball.com/?action=get_teams&league_id=${search}&APIkey=${apiKey}`;
+  outputDiv.innerHTML = (null);
   try {
     let response = await axios.get(teamUrl);
     let teamPlayerInformation = response.data.players
@@ -95,19 +99,19 @@ function showPlayerDataByName(playerInformation) {
     playerDiv.append(playerName);
 
     const playerAge = document.createElement("h3");
-    playerAge.innerText = playerInformation[i].player_age;
+    playerAge.innerText = `Age: ${playerInformation[i].player_age}`;
     playerDiv.append(playerAge);
 
     const playerType = document.createElement("h3");
-    playerType.innerText = playerInformation[i].player_type;
+    playerType.innerText = `Position: ${playerInformation[i].player_type}`;
     playerDiv.append(playerType);
 
     const playerCountry = document.createElement("h3");
-    playerCountry.innerText = playerInformation[i].player_country;
+    playerCountry.innerText = `National Team: ${playerInformation[i].player_country}`;
     playerDiv.append(playerCountry);
 
     const playerTeam = document.createElement("h3");
-    playerTeam.innerText = playerInformation[i].team_name;
+    playerTeam.innerText = `Club Team: ${playerInformation[i].team_name}`;
     playerDiv.append(playerTeam);
 
     const playerImage = document.createElement("img");
@@ -120,44 +124,40 @@ function showPlayerDataByName(playerInformation) {
 
 function showPlayerDataByTeam(teamPlayerInformation) {
   //create and append selected player information from teams url to the output div
-  for (let i = 0; i < teamPlayerInformation.length; i++) {
+  for (let n = 0; n < teamPlayerInformation.length; n++) {
     const playerDiv = document.createElement("div");
     playerDiv.classList = "playerCard";
     outputDiv.append(playerDiv);
 
     const playerName = document.createElement("h2");
-    playerName.innerText = teamPlayerInformation[i].player_name;
+    playerName.innerText = teamPlayerInformation[n].player_name;
     playerDiv.append(playerName);
 
     const playerAge = document.createElement("h3");
-    playerAge.innerText = teamPlayerInformation[i].player_age;
+    playerAge.innerText = teamPlayerInformation[n].player_age;
     playerDiv.append(playerAge);
 
     const playerType = document.createElement("h3");
-    playerType.innerText = teamPlayerInformation[i].player_type;
+    playerType.innerText = teamPlayerInformation[n].player_type;
     playerDiv.append(playerType);
 
     const playerCountry = document.createElement("h3");
-    playerCountry.innerText = teamPlayerInformation[i].player_country;
+    playerCountry.innerText = teamPlayerInformation[n].player_country;
     playerDiv.append(playerCountry);
 
     const playerTeam = document.createElement("h3");
-    playerTeam.innerText = teamPlayerInformation[i].team_name;
+    playerTeam.innerText = teamPlayerInformation[n].team_name;
     playerDiv.append(playerTeam);
 
     const playerImage = document.createElement("img");
-    playerImage.src = teamPlayerInformation[i].player_image;
+    playerImage.src = teamPlayerInformation[n].player_image;
     playerDiv.append(playerImage);
 
     outputDiv.append(playerDiv);
   }
 }
 
-//clear out data before following search
-// function removePlayerData() {
-//   searchDiv.innerHTML = "";
-// }
-
+//function showRandomPlayer?
 
 
 // //2. Function to search by name
