@@ -2,7 +2,7 @@
 Project 1 Application
 
 # Project Overview
-This purpose of "Find That Footy [Player]!" is to provide a database that can access various soccer (or "footy") players by name, national team, and/or position played. 
+This purpose of "Find That Footy [Player]!" is to provide a database that can access various soccer (or "footy") players by name, team, or position played. 
 
 ## Project Name
 Find That Footy [Player]!
@@ -12,21 +12,57 @@ This application with be a searchable database that returns player information b
 
 ## API and Data Sample
 The API used in this project is:
-https://www.football-data.org/
+https://apifootball.com/documentation/#Players
 
 ```
-{
-  "id": 44,
-  "name": "Cristiano Ronaldo",
-  "firstName": "Cristiano Ronaldo",
-  "lastName": null,
-  "dateOfBirth": "1985-02-05",
-  "countryOfBirth": "Portugal",
-  "nationality": "Portugal",
-  "position": "Attacker",
-  "shirtNumber": null,
-  "lastUpdated": "2021-05-26T09:46:02Z"
-}
+[
+    {
+        "player_key": 103051168,
+        "player_id": "103051168",
+        "player_image": "https://apiv3.apifootball.com/badges/players/52515_cristiano-ronaldo.jpg",
+        "player_name": "Cristiano Ronaldo",
+        "player_number": "7",
+        "player_country": "",
+        "player_type": "Forwards",
+        "player_age": "36",
+        "player_match_played": "4",
+        "player_goals": "5",
+        "player_yellow_cards": "0",
+        "player_red_cards": "0",
+        "player_minutes": "360",
+        "player_injured": "No",
+        "player_substitute_out": "0",
+        "player_substitutes_on_bench": "0",
+        "player_assists": "1",
+        "player_is_captain": "",
+        "player_shots_total": "",
+        "player_goals_conceded": "",
+        "player_fouls_committed": "",
+        "player_tackles": "",
+        "player_blocks": "",
+        "player_crosses_total": "",
+        "player_interceptions": "",
+        "player_clearances": "",
+        "player_dispossesed": "",
+        "player_saves": "",
+        "player_inside_box_saves": "",
+        "player_duels_total": "",
+        "player_duels_won": "",
+        "player_dribble_attempts": "",
+        "player_dribble_succ": "",
+        "player_pen_comm": "",
+        "player_pen_won": "",
+        "player_pen_scored": "",
+        "player_pen_missed": "",
+        "player_passes": "",
+        "player_passes_accuracy": "",
+        "player_key_passes": "",
+        "player_woordworks": "",
+        "player_rating": "",
+        "team_name": "Portugal",
+        "team_key": "23"
+    }
+]
 ```
 
 ## Wireframes
@@ -40,11 +76,11 @@ Mobile View:
 
 ### MVP/PostMVP
 #### MVP 
-- Find and use external api to access basic player information (name, national team, position, and jersey number).
-- Allow user to search for players via name, national team, and position played.
+- Find and use external api to access basic player information (name, team, position, and jersey number).
+- Allow user to search for players via name, team, and position played.
 - Add a button that generates information about a randomly chosen player.
 #### PostMVP  
-- Add second api to access player photos or video highlights.
+- Access player photos or video highlights.
 - Add 'club team' as a search function item and include this information in the player bio (this may need another api).
 
 ## Project Schedule
@@ -66,14 +102,14 @@ Mobile View:
 | --- | :---: |  :---: | :---: | :---: |
 | Set Up Personal GitHub Repo | H | 1 hrs| 1 hrs | 1 hrs |
 | Creating Pitch | H | 3 hrs| 4 hrs | 6 hrs |
-| Accessing a viable API | H | 3 hrs| 3 hrs | 4 hrs |
-| HTML Structure | H | 2 hrs | 2 hrs | hrs |
+| Accessing a viable API | H | 3 hrs| 4 hrs | 5 hrs |
+| HTML Structure | H | 2 hrs | 3 hrs | hrs |
 | Basic CSS Structure | H | 1 hrs | 1 hrs | hrs |
 | CSS Flexbox Layout | H | 3 hrs | 2 hrs | hrs |
 | CSS Styling (font, color, data output) | M | 3 hrs | 2 hrs | hrs |
 | CSS Media Query (desktop, mobile) | H | 2 hrs | hrs | hrs |
-| JS Axios / Linking API | H | 2 hrs | hrs | hrs |
-| JS Search by Name | H | 3 hrs | hrs | hrs |
+| JS Axios / Linking API | H | 2 hrs | 2 hrs | hrs |
+| JS Search by Name | H | 3 hrs | 2 hrs | hrs |
 | JS Search by Team | H | 3 hrs | hrs | hrs |
 | JS Search by Position | H | 3 hrs | hrs | hrs |
 | JS Random Player Generator | H | 3 hrs | hrs | hrs |
