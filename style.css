@@ -16,29 +16,28 @@ h1 {
   display: flex;
   justify-content: center;
   font-family: 'Graduate', cursive;
+  font-size: 48px;
+  color: #FFF9E9;
   background-image: url("https://easyturf.com/wp-content/uploads/2016/04/iStock_000045030676_Medium.jpg");
   text-align: center;
   border-radius: 10px;
   padding: 20px;
   margin: 0px;
-  font-size: 42px;
-  color: #FFF9E9;
 }
 
 .aboutapp {
   display: flex;
   justify-content: center;
-  font-size: 12px;
   text-align: center;
-  margin: 25px 50px;
-  padding: 5px;
-  border-style: solid;
+  margin: 10px;
+  padding: 5px 10px;
+  border-style: dotted;
   border-radius: 10px;
-  border-width: 5px;
+  border-width: 4px;
 }
 
 p {
-  font-size: 12px;
+  font-size: 18px;
 }
 
 #search {
@@ -50,18 +49,18 @@ p {
 }
 
 #name {
-  border: 3px solid #5A8100;
-  border-radius: 5px 0 0 5px;
+  background-color: #FFF9E9;
+  color: #5A8100;
+  border: 4px solid #5A8100;
+  border-radius: 10px 0 0 10px;
   font-size: 18px;
   padding: 10px;
 }
 
-h3 {
-  margin: 5px auto;
-}
 .nameSearch {
-  border: 3px solid #5A8100;
-  border-radius: 0 5px 5px 0;
+  background-color: #FFF9E9;
+  border: 4px solid #5A8100;
+  border-radius: 0 10px 10px 0;
   font-size: 18px;
   padding: 10px;
 }
@@ -74,12 +73,12 @@ h3 {
 }
 
 #random {
-  border: 3px solid #5A8100;
-  border-radius: 5px;
+  background-color: #FFF9E9;
+  border: 4px solid #5A8100;
+  border-radius: 10px;
   font-size: 18px;
   padding: 10px;
   color: #5A8100;
-  background-color: #FFB400;
 }
 
 .output {
@@ -91,7 +90,7 @@ h3 {
 
 .playerCard {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column;
   align-items:center;
   margin: 20px;
@@ -100,6 +99,7 @@ h3 {
   border-radius: 10px;
   border-width: 5px;
   width: 250px;
+  background-color: #FFF9E9;
 }
 
 .styleimage {
@@ -108,8 +108,15 @@ h3 {
   border-radius: 10px;
 }
 
-.playerInfo {
+h3 {
+  margin: 5px auto;
+}
 
+.playerInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
 }
 
 .stylename {
@@ -117,17 +124,16 @@ h3 {
   font-size: 24px;
 }
 
-footer {
+.footer {
   display: flex;
   justify-content: center;
   background-color: #5A8100;
   color: #FFF9E9;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: lighter;
   text-align: center;
-  border: 3px solid #5A8100;
   border-radius: 10px;
-  padding: 5px;
+  line-height: 18px;
 }
 
 @media screen and (min-width: 480px) {
@@ -143,6 +149,15 @@ footer {
   
   p {
   font-size: 24px;
+  line-height: 36px;
+  }
+
+  .nameSearch {
+    background-color: #FFB400;
+  }
+
+  #random {
+    background-color: #FFB400;
   }
 
   .output {
@@ -152,5 +167,10 @@ footer {
 
   .playerCard {
     min-width: 300px;
+    max-width: 400px;
+  }
+
+  .footer {
+    font-size: 14px;
   }
 }

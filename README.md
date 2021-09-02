@@ -89,7 +89,7 @@ Mobile View:
 |Monday, August 30| Project Pitch and Approval from Squad, Core Application Structure (HTML, basic CSS, beginning of JS) | Complete
 |Tuesday, August 31| JavaScript Functionality (call api, functioning search boxes and buttons that invoke data output) | Complete
 |Wednesday, September 1| Styling in CSS (flexbox, text styling, color scheme) | Complete
-|Thursday, September 2| Wrap Up Any Loose Ends in Code (function and style), Prepare for Presentation, Post MVPs | Incomplete
+|Thursday, September 2| Wrap Up Any Loose Ends in Code (function and style), Prepare for Presentation, Post MVPs | Complete
 |Friday, September 3| Presentations  | Incomplete
 
 ## Priority Matrix
@@ -103,19 +103,19 @@ Mobile View:
 | Set Up Personal GitHub Repo | H | 1 hrs| 1 hrs | 1 hrs |
 | Creating Pitch | H | 3 hrs| 4 hrs | 6 hrs |
 | Accessing a viable API | H | 3 hrs| 4 hrs | 5 hrs |
-| HTML Structure | H | 2 hrs | 3 hrs | hrs |
-| Basic CSS Structure | H | 1 hrs | 1 hrs | hrs |
-| CSS Flexbox Layout | H | 3 hrs | 3.5 hrs | hrs |
-| CSS Styling (font, color, data output) | M | 3 hrs | 3 hrs | hrs |
-| CSS Media Query (desktop, mobile) | H | 2 hrs | 1 hrs | hrs |
-| JS Axios / Linking API | H | 2 hrs | 5 hrs | hrs |
-| JS Search by Name | H | 3 hrs | 3 hrs | hrs |
-| JS Search by Team | H | 3 hrs | 1 hrs | hrs |
-| JS Search by Position | H | 3 hrs | hrs | hrs |
-| JS Random Player Generator | H | 3 hrs | 2 hrs | hrs |
+| HTML Structure | H | 2 hrs | 3 hrs | 3 hrs |
+| Basic CSS Structure | H | 1 hrs | 1 hrs | 1 hrs |
+| CSS Flexbox Layout | H | 3 hrs | 4 hrs | 4 hrs |
+| CSS Styling (font, color, data output) | M | 3 hrs | 3 hrs | 3 hrs |
+| CSS Media Query (desktop, mobile) | H | 2 hrs | 2 hrs | 2 hrs |
+| JS Axios / Linking API | H | 2 hrs | 6 hrs | 6 hrs |
+| JS Search by Name | H | 3 hrs | 3 hrs | 3 hrs |
+| JS Search by Team | H | 3 hrs | 1 hrs | 1 hrs |
+| JS Search by Position | H | 3 hrs | n/a | n/a |
+| JS Random Player Generator | H | 3 hrs | 4 hrs | 4 hrs |
 | Deploy App to GitHub | H | 2 hrs | hrs | hrs |
-| Post MVP to Add Player Image | M | 8 hrs | 1 hrs | hrs |
-| Total |  | 42 hrs| hrs | hrs |
+| Post MVP to Add Player Image | M | 8 hrs | 2 hrs | 2 hrs |
+| Total |  | 42 hrs| 38 hrs | 41 hrs |
 
 ## Code Snippet
 
@@ -128,4 +128,5 @@ function reverse(string) {
 ```
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.  
+ I had to re-direct a lot of my initial vision because of my API. The first API I was trying to access did not have all of the information that I needed. The instructors helped me find a second API, which allowed me to access players by name, but I was unable to access them by team or position. This was not as much of an issue in the end, however, because I realized that it wouldn't be very helpful for the user to search an entire team's history of players or all of the players that fall under a specific position. Their response would be too many player cards, which would not be helpful in finding a specific player.
+ I also had to change the scope of the "Random Player Generator" button. The API URL that accesses teams is only searchable by an id number, not a string name. To go around this setback, I created an array of 24 teams from which the async function can pull a player at random.

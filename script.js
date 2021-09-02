@@ -27,7 +27,7 @@ async function findPlayer() {
   try {
     let response = await axios.get(nameUrl);
     let playerInformation = response.data
-    console.log(playerInformation);
+    // console.log(playerInformation);
     // console.log(response.data);
     showPlayerDataByName(playerInformation);
   } catch (error) {
@@ -49,7 +49,7 @@ async function getTeamPlayers(i) {
   let response = await axios.get(`https://apiv3.apifootball.com/?action=get_teams&team_id=${i}&APIkey=${apiKey}`);
   // console.log(response.data);
   let randomPlayer = Math.floor(Math.random() * response.data[0].players.length);
-  showPlayerDataByName([response.data[0].players[randomPlayer]]);
+  showPlayerDataByName([response.data[0].players[randomPlayer]], response.data[0].team_name);
   // findPlayer([response.data[0].players[randomPlayer]]); access player name from this call
 }
 
@@ -57,8 +57,8 @@ async function getTeamPlayers(i) {
 
 //append data to page
 const outputDiv = document.querySelector(".output");
-function showPlayerDataByName(playerInformation) {
-  console.log(playerInformation);
+function showPlayerDataByName(playerInformation, teamName) {
+  // console.log(playerInformation);
   //create and append selected player information from api to the output div
   for (let i = 0; i < playerInformation.length; i++) {
     const playerDiv = document.createElement("div");
@@ -69,6 +69,12 @@ function showPlayerDataByName(playerInformation) {
     playerImage.src = playerInformation[i].player_image;
     playerImage.classList.add("styleimage");
     playerDiv.append(playerImage);
+
+    // const playerImage = document.createElement("img");
+    // playerInformation[i].player_image !== "" ? playerImage.src = playerInformation[i].player_image :
+    //   player_image.src = "https://res.cloudinary.com/dyyjvyqtn/image/upload/v1630340009/SoccerBall_uctjcj.png";
+    // playerImage.classList.add("styleimage");
+    // playerDiv.append(playerImage);
 
     const playerInfo = document.createElement("div");
     playerInfo.classList = "playerInfo"
@@ -89,14 +95,13 @@ function showPlayerDataByName(playerInformation) {
 
     const playerTeam = document.createElement("h3");
     if (playerInformation[i].team_name === undefined) {
-      playerTeam.innerText = "Team: ¯\_(ツ)_/¯ ask my friend, google!";
+      playerTeam.innerText = teamName;
       playerInfo.append(playerTeam);
     } else {
       playerTeam.innerText = `Team: ${playerInformation[i].team_name}`;
       playerInfo.append(playerTeam);
     }
     // playerDiv.append(playerTeam);
-
     outputDiv.append(playerDiv);
   }
 }
