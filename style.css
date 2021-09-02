@@ -11,41 +11,55 @@ body{
   height: 100%;
 }
 
+div {
+  font-family: 'ABeeZee', sans-serif;
+  color: #5A8100;
+}
+
 h1 {
   display: flex;
   justify-content: center;
   font-family: 'IBM Plex Sans Arabic', sans-serif;
   background-image: url("https://easyturf.com/wp-content/uploads/2016/04/iStock_000045030676_Medium.jpg");
   text-align: center;
+  border-radius: 10px;
   padding: 20px;
   margin: 0px;
   font-size: 42px;
   color: #FFF9E9;
 }
 
-p {
+.aboutapp {
   display: flex;
   justify-content: center;
-  font-size: 14 px;
-}
-
-.aboutapp {
+  font-size: 24 px;
   text-align: center;
-  font-size: 18px;
+  padding: 5px;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 5px;
 }
 
-div {
-  font-family: 'ABeeZee', sans-serif;
-  color: #5A8100;
-}
 
 #search {
-  display: flex;
-  flex-direction: row;
+  display: inline-flex;
   justify-content: center;
   align-items: flex-start;
   align-content: space-between;
   margin: 40px;
+}
+
+#name {
+  border: 3px solid #5A8100;
+  border-radius: 5px 0 0 5px;
+  font-size: 18px;
+  padding: 10px;
+}
+.nameSearch {
+  border: 3px solid #5A8100;
+  border-radius: 0 5px 5px 0;
+  font-size: 18px;
+  padding: 10px;
 }
 
 .random {
@@ -54,8 +68,13 @@ div {
   align-items: flex-end;
 }
 
-.soccerBall {
-
+#random {
+  border: 3px solid #5A8100;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px;
+  color: #5A8100;
+  background-color: #FFF9E9;
 }
 
 .output {
@@ -83,6 +102,9 @@ footer {
   font-size: 12px;
   font-weight: lighter;
   text-align: center;
+  border: 3px solid #5A8100;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 @media screen and (min-width: 480px) {
