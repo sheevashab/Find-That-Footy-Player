@@ -1,25 +1,21 @@
-/* html {
-height: 100%;
-width: 100%;
-} */
+html {
+  height: 100%;
+} 
 
 body{
   background-color: #FFB400;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   height: 100%;
-}
-
-div {
-  font-family: 'ABeeZee', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   color: #5A8100;
 }
 
 h1 {
   display: flex;
   justify-content: center;
-  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  font-family: 'Graduate', cursive;
   background-image: url("https://easyturf.com/wp-content/uploads/2016/04/iStock_000045030676_Medium.jpg");
   text-align: center;
   border-radius: 10px;
@@ -32,14 +28,18 @@ h1 {
 .aboutapp {
   display: flex;
   justify-content: center;
-  font-size: 24 px;
+  font-size: 12px;
   text-align: center;
+  margin: 25px 50px;
   padding: 5px;
   border-style: solid;
   border-radius: 10px;
   border-width: 5px;
 }
 
+p {
+  font-size: 12px;
+}
 
 #search {
   display: inline-flex;
@@ -55,6 +55,10 @@ h1 {
   font-size: 18px;
   padding: 10px;
 }
+
+h3 {
+  margin: 5px auto;
+}
 .nameSearch {
   border: 3px solid #5A8100;
   border-radius: 0 5px 5px 0;
@@ -66,6 +70,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  margin: 25px;
 }
 
 #random {
@@ -74,7 +79,7 @@ h1 {
   font-size: 18px;
   padding: 10px;
   color: #5A8100;
-  background-color: #FFF9E9;
+  background-color: #FFB400;
 }
 
 .output {
@@ -83,6 +88,7 @@ h1 {
   flex-wrap: wrap;
   width: 100%;
 }
+
 .playerCard {
   display: flex;
   justify-content: center;
@@ -93,7 +99,24 @@ h1 {
   border-style: solid;
   border-radius: 10px;
   border-width: 5px;
+  width: 250px;
 }
+
+.styleimage {
+  width: 100%;
+  height: contain;
+  border-radius: 10px;
+}
+
+.playerInfo {
+
+}
+
+.stylename {
+  font-family: 'Graduate', cursive;
+  font-size: 24px;
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -117,8 +140,17 @@ footer {
     color: #FFB400;
     font-size: 72px;
   }
-}
+  
+  p {
+  font-size: 24px;
+  }
 
-p {
-  font-size: 24 px;
+  .output {
+  display: flex;
+  flex-direction: row;
+  }
+
+  .playerCard {
+    min-width: 300px;
+  }
 }

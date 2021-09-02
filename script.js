@@ -5,9 +5,10 @@ const apiKey = "f7e634914de6fd221adb37b5a65380f3caa91588eb38b6edcb7db66c42344a1d
 let nameUrl = `https://apiv3.apifootball.com/?action=get_players&player_name=${search}&APIkey=${apiKey}`;
 let teamIds = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24];
 
-//input variables to retrieve user input that will eventually return the values of player info
-const inputName = document.querySelector("#name");
 
+
+//input variables to retrieve user input from Search by Name that will eventually return the values of player info
+const inputName = document.querySelector("#name");
 //attach event listener for search by name
 let searchName = document.querySelector(".nameSearch");
 searchName.addEventListener("click", (e) => {
@@ -17,8 +18,24 @@ searchName.addEventListener("click", (e) => {
   // console.log(url);
   url = nameUrl;
   findPlayer();
-  inputName.value = ""
+  inputName.value = "";
 });
+//send axios get request to api's player URL for search by name
+async function findPlayer() {
+  let nameUrl = `https://apiv3.apifootball.com/?action=get_players&player_name=${search}&APIkey=${apiKey}`;
+  outputDiv.innerHTML = (null);
+  try {
+    let response = await axios.get(nameUrl);
+    let playerInformation = response.data
+    console.log(playerInformation);
+    // console.log(response.data);
+    showPlayerDataByName(playerInformation);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+
 
 //attach event listener for Random Player Generator button (pulls from teamIds array above)
 let randomSearch = document.querySelector("#random");
@@ -37,20 +54,6 @@ async function getTeamPlayers(i) {
 }
 
 
-//send axios get request to api's player URL for search by name
-async function findPlayer() {
-  let nameUrl = `https://apiv3.apifootball.com/?action=get_players&player_name=${search}&APIkey=${apiKey}`;
-  outputDiv.innerHTML = (null);
-  try {
-    let response = await axios.get(nameUrl);
-    let playerInformation = response.data
-    console.log(playerInformation);
-    // console.log(response.data);
-    showPlayerDataByName(playerInformation);
-  } catch (error) {
-    console.log(error);
-  }
-}
 
 //append data to page
 const outputDiv = document.querySelector(".output");
@@ -62,35 +65,45 @@ function showPlayerDataByName(playerInformation) {
     playerDiv.classList = "playerCard";
     outputDiv.append(playerDiv);
 
+    const playerImage = document.createElement("img");
+    playerImage.src = playerInformation[i].player_image;
+    playerImage.classList.add("styleimage");
+    playerDiv.append(playerImage);
+
+    const playerInfo = document.createElement("div");
+    playerInfo.classList = "playerInfo"
+    playerDiv.append(playerInfo);
+
     const playerName = document.createElement("h2");
     playerName.innerText = playerInformation[i].player_name;
-    playerDiv.append(playerName);
+    playerName.classList.add("stylename");
+    playerInfo.append(playerName);
 
     const playerAge = document.createElement("h3");
     playerAge.innerText = `Age: ${playerInformation[i].player_age}`;
-    playerDiv.append(playerAge);
+    playerInfo.append(playerAge);
 
     const playerType = document.createElement("h3");
     playerType.innerText = `Position: ${playerInformation[i].player_type}`;
-    playerDiv.append(playerType);
+    playerInfo.append(playerType);
 
     const playerTeam = document.createElement("h3");
     if (playerInformation[i].team_name === undefined) {
-      playerTeam.innerText = "¯\_(ツ)_/¯ ask my friend, google!";
-      playerDiv.append(playerTeam);
+      playerTeam.innerText = "Team: ¯\_(ツ)_/¯ ask my friend, google!";
+      playerInfo.append(playerTeam);
     } else {
       playerTeam.innerText = `Team: ${playerInformation[i].team_name}`;
-      playerDiv.append(playerTeam);
+      playerInfo.append(playerTeam);
     }
     // playerDiv.append(playerTeam);
-
-    const playerImage = document.createElement("img");
-    playerImage.src = playerInformation[i].player_image;
-    playerDiv.append(playerImage);
 
     outputDiv.append(playerDiv);
   }
 }
+
+
+
+
 
 // //attach event listener for search by team
 // let searchTeam = document.querySelector(".teamSearch");
