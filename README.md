@@ -1,5 +1,6 @@
 # Find-That-Footy-Player-!
 Project 1 Application
+[link to deployed site](https://sheevashab.github.io/Find-That-Footy-Player/)
 
 # Project Overview
 This purpose of "Find That Footy [Player]!" is to provide a database that can access various soccer (or "footy") players by name, team, or position played. 
