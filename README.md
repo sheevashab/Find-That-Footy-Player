@@ -119,12 +119,48 @@ Mobile View:
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
+I am happy that I was able to use one function to output the necessary data from two different axios calls. Even though the objects in the APIs were nested differently, I was able to call out the necessary information within this single showPlayerDataByName function.
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+const outputDiv = document.querySelector(".output");
+function showPlayerDataByName(playerInformation, teamName) {
+  for (let i = 0; i < playerInformation.length; i++) {
+    const playerDiv = document.createElement("div");
+    playerDiv.classList = "playerCard";
+    outputDiv.append(playerDiv);
+
+    const playerImage = document.createElement("img");
+    playerImage.src = playerInformation[i].player_image;
+    playerImage.classList.add("styleimage");
+    playerDiv.append(playerImage);
+
+    const playerInfo = document.createElement("div");
+    playerInfo.classList = "playerInfo"
+    playerDiv.append(playerInfo);
+
+    const playerName = document.createElement("h2");
+    playerName.innerText = playerInformation[i].player_name;
+    playerName.classList.add("stylename");
+    playerInfo.append(playerName);
+
+    const playerAge = document.createElement("h3");
+    playerAge.innerText = `Age: ${playerInformation[i].player_age}`;
+    playerInfo.append(playerAge);
+
+    const playerType = document.createElement("h3");
+    playerType.innerText = `Position: ${playerInformation[i].player_type}`;
+    playerInfo.append(playerType);
+
+    const playerTeam = document.createElement("h3");
+    if (playerInformation[i].team_name === undefined) {
+      playerTeam.innerText = teamName;
+      playerInfo.append(playerTeam);
+    } else {
+      playerTeam.innerText = `Team: ${playerInformation[i].team_name}`;
+      playerInfo.append(playerTeam);
+    }
+    outputDiv.append(playerDiv);
+  }
 ```
 
 ## Change Log
